@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -291,14 +291,14 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(55, 55, 55) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 75%;
 }
 
 .section__pic-container {
