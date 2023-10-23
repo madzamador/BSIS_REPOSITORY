@@ -14,7 +14,7 @@
 <button onclick="green()"> GREEN </button> -->
 
 <p id="output"></p>
-<button onclick="pressed()"> Click Here! </button>
+<button onclick="pressed()"> Click </button>
 
 <script type="text/javascript">
 
@@ -144,7 +144,7 @@
             //     }
             // }
 
-    // SWITCH
+         // SWITCH
 
             // function pressed(){
             //      var text = document.getElementById("inpt").value;
@@ -167,7 +167,7 @@
             //      }
             // }
 
-    // ANOTHER EXAMPLE
+        // ANOTHER EXAMPLE
                 
             // function pressed(){
             //     var text = parseInt(document.getElementById("inpt").value);
@@ -182,6 +182,19 @@
             //         output.innerHTML = "Please input a valid number!"
             //     }
             // }
+
+        // STRING METHODS AND MANIPULATION
+
+        function pressed(){
+                var text = document.getElementById("inpt").value;
+                output.innerHTML = text.toUpperCase();
+                
+        }
+                console.log(text);
+
+        
+                
+
 </script>
 
 </body>
