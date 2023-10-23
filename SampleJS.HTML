@@ -238,19 +238,123 @@
         //         i++;
         // }
 
-        var arr = [];
-        var i = 0;
-        while(i<=100){
-                arr.push(i);
-                i++
+        // var arr = [];
+        // var i = 0;
+        // while(i<=100){
+        //         arr.push(i);
+        //         i++
+        // }
+        // console.log(arr);
+
+// FOR LOOP
+        // function find(arr, value){
+        //         for(var i = 0; i< arr.length; i++){
+        //                 if(arr[i] == value){
+        //                         return true
+        //                 }
+        //         }
+        //         return false
+        // }
+
+        // var arr = [1, 2, 3, 4, 5, "Madz", true]
+        // console.log(find(arr, "Madz"))
+
+        // function squared(num){
+        //         for(var i = 0; i < num; i++){
+        //                 for( var j = 0; j < num; j++){
+        //                         console.log("RUN")
+        //                 }
+        //         }
+        // }
+        // squared(3)
+
+        // var x = "BSIS3A"
+        // for(var i = 0; i < x.length; i++){
+        //         console.log(x[i]);
+        // }
+
+// SET
+
+        // var _set = new Set()
+        // _set.add(8).add(6).add(9).add(8).add(7)
+        // console.log(_set);
+        // console.log(_set.has(5))
+        // console.log(_set.has(8))
+        // console.log(_set.size)
+        // console.log(_set.delete(8))
+        // console.log(_set)
+        // console.log(_set.values())
+
+        // for(var entry of _set.values()){
+        //         console.log(entry)
+        // }
+
+        // var set1 = new Set([1,2,2,3,4,4,4,4,5,2])
+        // console.log(set1)
+        // var set2 = new Set("Hello")
+        // console.log(set2)
+
+        
+        // function test(x){
+        //         if(x == 'o'){
+        //                 console.log("Found " + x)
+        //         }
+        //         else{
+        //                 console.log("None")
+        //         }
+        // }
+
+        // var set1 = new Set("Hello")
+        // set1.forEach(test)
+
+// MAPS key and a value pairs. ["hi", 6] / [6, "hi"]
+
+        // var mp = new Map([["s", 6], [3, "hello"]])
+        // console.log(mp.get("s")); // Get the key and display its value.
+
+        // mp.set(3, "hi");
+        // console.log(mp.get(3));
+
+        // mp.set("x", 9)
+        // console.log(mp.get("x"))
+        // console.log(mp.size)
+
+        // console.log(mp.get("k"))
+
+        // console.log(mp.has("s"))
+        // console.log(mp)
+
+        // for(var entry of mp){
+        //         console.log(entry[0])
+        // }
+
+        // for(var entry of mp){
+        //         console.log(entry[1])
+        // }
+
+        // // mp.clear()
+        // // console.log(mp)
+        
+        var mp = new Map()
+        str = "This is my new programming language javascript"
+        for(var letter of str){ // loop thru "str"
+                if(mp.has(letter)){ // if it does have the letter or if the letter exist + 1
+                        mp.set(letter, mp.get(letter) + 1)// the key will be the letter and the value will be 1 to nth.
+                }
+                else{ // add the letter to the map
+                        mp.set(letter, 1) // if first time the letter's initial value will be 1.
+                }
         }
-        console.log(arr);
+        console.log(mp)
+        
 
 
 
 
 
-                
+
+
+
 
 </script>
 
